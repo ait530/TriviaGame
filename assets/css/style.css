@@ -39,8 +39,9 @@ body {
 
 #main-Header {
   
-  height:200px;
+  height:400px;
   background-color:yellow;
+
 
 
 }
@@ -50,5 +51,54 @@ body {
 #time-Remaining {
 
   background-color:green;
+  color:white;
 
 }
+
+
+#question {
+
+  background-color:red;
+  color:white;
+
+
+}
+
+
+#answer1 {
+
+  background-color: purple;
+
+
+}
+
+
+
+#answer2 {
+
+  background-color: purple;
+
+
+}
+
+
+
+#answer3 {
+
+  background-color: purple;
+
+
+
+}
+
+
+
+#answer4 {
+
+  background-color: purple;
+
+
+
+}
+
+
