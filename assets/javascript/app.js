@@ -1,81 +1,131 @@
+/*Outline:
+****************************
+1. Variables as objects
+
+2. Variables that are score counters (wins, losses)
+
+3. Functions
+
+4. Main processs
+
+***********************
+
+
 /*Executes code after entire page loads*/
-window.onload = function () {
+$(document).ready(function() {
+
+//Once the page loads, activate the following click button functions.
+
+
+  // Click Events here:
+  /*
+  
+
+  $("insert div").click(insert variable.insert some function);
+
+  */
+
+
+
+});
+
+
+  //Timer object
+  var gameTimer = {
+    time:0,
+    lap:1, 
+    reset: function () {
+        stopwatch.time=
+
+    }
+
+
+
+  count: function(){
+
+    /*Increments the timer by one*/
+    gameTimer.time++;
+
+    var converted = gameTimer.timeConverter(gameTimer.time);
+
+
+    $('Insert div id').html(converted);
+
+  }
 
 
 
 
+  /*Large, clickable Start button that, when pushed, transitions to the question, answer, and timer screen
+  (add hover CSS effect)*/
+  function: startGame() {
+
+
+  };
+
+
+  /*Initiates the timer*/
+  //Performs timer just built every 1000 mili-seconds
+  function startTimer() {
+    counter = setInterval(gameTimer.count, 1000);
 
 
 
-}
+  }]
+
+
+  /*A timer counting down, time remaining, from say, 30 seconds. 
+
+  If timer reaches 0, the game will transtion to an out of time (function?) prompt with the correct answer*/
+  function timerDown () {
+
+
+  };
 
 
 
-var correctAnswers
-var 
+  /*Stop timer will stop the timer from continusing to countdown*/
+  //Keeps from counting up
+  function stopTimer () {
+    clearInterval(counter);
 
 
-
-/*Large, clickable Start button that, when pushed, transitions to the question, answer, and timer screen
-(add hover CSS effect)*/
-function startGame() {
+  };
 
 
-};
+  /*Transitions game to out of time prompt with the correct answer for the question. After a certain amount of time (5 secs?), transitions to the next question, or to game over screen if everything has been answered
+  */
+  function outOftime () {
 
 
-
-
-
-/*A timer counting down, time remaining, from say, 30 seconds. 
-
-If timer reaches 0, the game will transtion to an out of time (function?) prompt with the correct answer*/
-function timerDown () {
-
-
-};
-
-
-
-/*Stop timer will stop the timer from continusing to countdown*/
-function stopTimer () {};
-
-
-
-
-/*Transitions game to out of time prompt with the correct answer for the question. After a certain amount of time (5 secs?), transitions to the next question, or to game over screen if everything has been answered
-*/
-function outOftime () {
-
-
-};
-
-
-
-
-function question()
-
-
-
-/*Tells user "Correct!"*/
-function correctAnswer() {}
-
-
-
-/*Tell user "Nope/Incorrect!" and show the correct answer below*/
-function incorrectAnswer () {}
-
-
-
-/*Shows all done: the user's correct answers; incorrect answers; and unanswered? also shows the start over? button*/
-function endGame() {}
+  };
 
 
 
 
-/*When the start over button is clicked, the game will transtion striaght to the next question, thus resetting the game*/
-function startOver(){}
+  function question()
 
 
-start: function()
+
+  /*Tells user "Correct!", after 5 seconds, display the next question without user input*/
+  function correctAnswer() {}
+
+
+
+  /*Tell user "Nope/Incorrect!" and show the correct answer below, display the next question without user input*/
+  function incorrectAnswer () {}
+
+
+
+  /*Shows all done: the user's correct answers; incorrect answers; and unanswered? also shows the start over? button*/
+  function endGame() {}
+
+
+
+
+  /*When the start over button is clicked, the game will transtion striaght to the next question, thus resetting the game*/
+  function startOver(){}
+
+
+
 
