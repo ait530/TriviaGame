@@ -1,5 +1,5 @@
 /*Outline:
-****************************
+****************************************************************
 1. Variables as objects
 
 2. Variables that are score counters (wins, losses)
@@ -8,7 +8,51 @@
 
 4. Main processs
 
-***********************
+****************************************************************
+TOOLS:
+
+-Offers a way to run JavaScript code as soon as the page's Document Object Model (DOM) becomes safe to manipulate.
+
+
+$( document ).ready(function() {
+  // Handler for .ready() called.
+});
+
+
+
+-Create a click function:
+
+  $("insert div id" name).click(function(){
+    
+  });
+
+
+
+-Adds/changes content of element with id name:
+
+  document.getElementById("insert div id name").innerHTML = "Insert desired text";
+
+
+
+
+*******************
+*******************
+
+
+var triviaData = {
+  questionOne: {
+    question: "how much wood could a woodchop",
+    correctAnswer: "foo",
+    incorrectAnswers: [
+      "bar", "wat", "foo"
+    ]
+  },
+  questionTwo: ...
+}
+
+
+
+
 
 
 /*Executes code after entire page loads*/
@@ -54,7 +98,7 @@ $(document).ready(function() {
   }
 
 
-
+  
 
   /*Large, clickable Start button that, when pushed, transitions to the question, answer, and timer screen
   (add hover CSS effect)*/
@@ -108,12 +152,17 @@ $(document).ready(function() {
 
 
   /*Tells user "Correct!", after 5 seconds, display the next question without user input*/
-  function correctAnswer() {}
+  function correctAnswer() {
+
+
+  }
 
 
 
   /*Tell user "Nope/Incorrect!" and show the correct answer below, display the next question without user input*/
-  function incorrectAnswer () {}
+  function incorrectAnswer () {
+    
+  }
 
 
 
