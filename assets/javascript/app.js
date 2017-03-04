@@ -1,57 +1,66 @@
-/*Outline:
-****************************************************************
-1. Variables as objects
+// Outline:
+// ****************************************************************
+// 1. Variables as objects
 
-2. Variables that are score counters (wins, losses)
+// 2. Variables that are score counters (wins, losses)
 
-3. Functions
+// 3. Functions
 
-4. Main processs
+// 4. Main processs
 
-****************************************************************
-TOOLS:
+// ****************************************************************
+// TOOLS:
 
--Offers a way to run JavaScript code as soon as the page's Document Object Model (DOM) becomes safe to manipulate.
-
-
-$( document ).ready(function() {
-  // Handler for .ready() called.
-});
+// -Offers a way to run JavaScript code as soon as the page's Document Object Model (DOM) becomes safe to manipulate.
 
 
+// $( document ).ready(function() {
+//   // Handler for .ready() called.
+// });
 
--Create a click function:
 
-  $("insert div id" name).click(function(){
+
+// -Create a click function:
+
+//   $("insert div id" name).click(function(){
     
-  });
+//   });
 
 
 
--Adds/changes content of element with id name:
+// -Adds/changes content of element with id name:
 
-  document.getElementById("insert div id name").innerHTML = "Insert desired text";
-
-
+//   document.getElementById("insert div id name").innerHTML = "Insert desired text";
 
 
-*******************
-*******************
 
 
-var triviaData = {
-  questionOne: {
-    question: "how much wood could a woodchop",
-    correctAnswer: "foo",
-    incorrectAnswers: [
-      "bar", "wat", "foo"
-    ]
-  },
-  questionTwo: ...
-}
+// *******************
+// *******************
 
 
-/*Executes code after entire page loads*/
+// var triviaData = {
+//   questionOne: {
+//     question: "how much wood could a woodchop",
+//     correctAnswer: "foo",
+//     incorrectAnswers: [
+//       "bar", "wat", "foo"
+//     ]
+//   },
+//   questionTwo: ...
+// }
+
+
+
+var correctAnswersCounter = 0;
+
+var incorrectAnswersCounter = 0;
+
+
+
+
+
+/*Executes code after entire page loads
 $(document).ready(function() {
 
 //Once the page loads, activate the following click button functions.
@@ -59,16 +68,21 @@ $(document).ready(function() {
 /***********************************
                DATA
 *************************************/
+  
+ 
+
+
+
   var questions = [
-    "blah blah",
-    "blee blee"
+    "",
+    ""
 
   ]
 
 
   var answers = [
-    "yes",
-    "no"
+    "",
+    ""
 
   ]
 
@@ -98,7 +112,7 @@ $(document).ready(function() {
   // });
 
 
-});
+};
     
 
   
@@ -146,6 +160,9 @@ $(document).ready(function() {
 
 function startGame() {
     
+    // Change to question and answers screen, after start button is clicked
+
+
     console.log("game is started!");
   
 }
@@ -157,7 +174,7 @@ function startGame() {
 
 function startGameover() {
     
-    alert("Yeaahhh Baby!!!");
+    alert("Reset Game");
   
 }
 
