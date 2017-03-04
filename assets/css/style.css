@@ -18,9 +18,8 @@
 */
 
 body {
-
-  /*background-image:*/ 
-  background-color:black;
+ 
+  background-image: url("../images/cartoonTheme.png");
 
 }
 
@@ -43,6 +42,8 @@ body {
   
   height:400px;
   background-color:yellow;
+  font-family: 'Faster One', cursive;
+  color:purple;
 
 
 
@@ -77,7 +78,7 @@ body {
 
 
 
-.Button {
+#Button-Start {
 
   background-color: black;
   color:white;
@@ -90,7 +91,34 @@ body {
 
 
 
-.Button:hover {
+#Button-Start:hover {
+
+  background-color: black;
+  color:yellow;
+  width:500px;
+  height:50px;
+  font-size:25px;
+  border-color:green;
+  border-width:6px;
+
+}
+
+
+
+#Button-Start-Over {
+
+  background-color: black;
+  color:white;
+  width:500px;
+  height:50px;
+  font-size:25px;
+  border-color:red;
+
+}
+
+
+
+#Button-Start-Over:hover {
 
   background-color: black;
   color:yellow;

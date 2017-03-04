@@ -51,17 +51,119 @@ var triviaData = {
 }
 
 
-
-
-
-
 /*Executes code after entire page loads*/
 $(document).ready(function() {
 
 //Once the page loads, activate the following click button functions.
 
+/***********************************
+               DATA
+*************************************/
+  var questions = [
+    "blah blah",
+    "blee blee"
 
-  // Click Events here:
+  ]
+
+
+  var answers = [
+    "yes",
+    "no"
+
+  ]
+
+   
+
+
+
+  $("#Button-Start").click(function() {
+      startGame();
+  
+  });
+
+
+
+
+
+  $("#Button-Start-Over").click(function() {
+      startGameover();
+  
+  });
+
+
+
+  // $("#Button-Start").click(function() {
+  //     startGame();
+  
+  // });
+
+
+});
+    
+
+  
+
+
+
+//   function countDown() {
+
+
+//   }
+
+
+//   function stopTimer() {
+
+
+
+//   }
+
+
+//   function incorrectAnswer() {
+
+//   }
+
+
+//   function correctAnswer() {
+
+
+//   }
+  
+
+//   function endGame () {
+
+//   }
+
+
+//   function startOver () {
+
+
+//   }
+
+
+// });
+
+
+
+function startGame() {
+    
+    console.log("game is started!");
+  
+}
+
+
+
+
+
+
+function startGameover() {
+    
+    alert("Yeaahhh Baby!!!");
+  
+}
+
+
+
+// Click Events here:
   /*
   
 
@@ -69,112 +171,112 @@ $(document).ready(function() {
 
   */
 
+  // //Timer object
+  // var gameTimer = {
+  //   time:0,
+  //   lap:1
+  //   // reset: function () {
+  //   //     stopwatch.time = "foo"
 
-
-});
-
-
-  //Timer object
-  var gameTimer = {
-    time:0,
-    lap:1, 
-    reset: function () {
-        stopwatch.time=
-
-    }
+  //   // }
+  // }
 
 
 
-  count: function(){
+  // var count = function(){
 
-    /*Increments the timer by one*/
-    gameTimer.time++;
+  //   /*Increments the timer by one*/
+  //   gameTimer.time++;
 
-    var converted = gameTimer.timeConverter(gameTimer.time);
-
-
-    $('Insert div id').html(converted);
-
-  }
+  //   var converted = gameTimer.timeConverter(gameTimer.time);
 
 
+  //   $('Insert div id').html(converted);
+
+  // }
+
+ // /* var startButton;
+ //  /*Large, clickable Start button that, when pushed, transitions to the question, answer, and timer screen
+ //  (add hover CSS effect)*/
+ //  // function startGame() {
+ //    startButton = $(".Button-Start").click(function(){
+ //      console.log("game is started");
   
-
-  /*Large, clickable Start button that, when pushed, transitions to the question, answer, and timer screen
-  (add hover CSS effect)*/
-  function: startGame() {
+ //  })
 
 
-  };
-
-
-  /*Initiates the timer*/
-  //Performs timer just built every 1000 mili-seconds
-  function startTimer() {
-    counter = setInterval(gameTimer.count, 1000);
+ //  /*Initiates the timer*/
+ //  //Performs timer just built every 1000 mili-seconds
+ //  function startTimer() {
+ //    counter = setInterval(gameTimer.count, 1000);
 
 
 
-  }]
+ //  }
 
 
-  /*A timer counting down, time remaining, from say, 30 seconds. 
+ //  /*A timer counting down, time remaining, from say, 30 seconds. 
 
-  If timer reaches 0, the game will transtion to an out of time (function?) prompt with the correct answer*/
-  function timerDown () {
-
-
-  };
+ //  If timer reaches 0, the game will transtion to an out of time (function?) prompt with the correct answer*/
+ //  function timerDown () {
 
 
-
-  /*Stop timer will stop the timer from continusing to countdown*/
-  //Keeps from counting up
-  function stopTimer () {
-    clearInterval(counter);
+ //  };
 
 
-  };
+
+ //  /*Stop timer will stop the timer from continusing to countdown*/
+ //  //Keeps from counting up
+ //  function stopTimer () {
+ //    clearInterval(counter);
 
 
-  /*Transitions game to out of time prompt with the correct answer for the question. After a certain amount of time (5 secs?), transitions to the next question, or to game over screen if everything has been answered
-  */
-  function outOftime () {
+ //  };
 
 
-  };
+ //  Transitions game to out of time prompt with the correct answer for the question. After a certain amount of time (5 secs?), transitions to the next question, or to game over screen if everything has been answered
+  
+ //  function outOftime () {
+
+
+ //  };
 
 
 
 
-  function question()
+ //  function question() {
+
+ //  }
 
 
 
-  /*Tells user "Correct!", after 5 seconds, display the next question without user input*/
-  function correctAnswer() {
+ //  /*Tells user "Correct!", after 5 seconds, display the next question without user input*/
+ //  function correctAnswer() {
 
 
-  }
+ //  }
 
 
 
-  /*Tell user "Nope/Incorrect!" and show the correct answer below, display the next question without user input*/
-  function incorrectAnswer () {
+ //  /*Tell user "Nope/Incorrect!" and show the correct answer below, display the next question without user input*/
+ //  function incorrectAnswer () {
     
-  }
+ //  }
 
 
 
-  /*Shows all done: the user's correct answers; incorrect answers; and unanswered? also shows the start over? button*/
-  function endGame() {}
+ //  /*Shows all done: the user's correct answers; incorrect answers; and unanswered? also shows the start over? button*/
+ //  function endGame() {
 
-
-
-
-  /*When the start over button is clicked, the game will transtion striaght to the next question, thus resetting the game*/
-  function startOver(){}
+ //  }
 
 
 
 
+ //  /*When the start over button is clicked, the game will transtion striaght to the next question, thus resetting the game*/
+ //  function startOver() {
+
+ //  }
+
+
+ //  startGame();
