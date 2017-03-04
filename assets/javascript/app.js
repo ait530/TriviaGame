@@ -14,7 +14,7 @@
 // -Offers a way to run JavaScript code as soon as the page's Document Object Model (DOM) becomes safe to manipulate.
 
 
-// $( document ).ready(function() {
+$( document ).ready(function() {
 //   // Handler for .ready() called.
 // });
 
@@ -52,9 +52,9 @@
 
 
 
-var correctAnswersCounter = 0;
+// var correctAnswersCounter = 0;
 
-var incorrectAnswersCounter = 0;
+// var incorrectAnswersCounter = 0;
 
 
 
@@ -73,18 +73,18 @@ $(document).ready(function() {
 
 
 
-  var questions = [
-    "",
-    ""
+  // var questions = [
+  //   "",
+  //   ""
 
-  ]
+  // ]
 
 
-  var answers = [
-    "",
-    ""
+  // var answers = [
+  //   "",
+  //   ""
 
-  ]
+  // ]
 
    
 
@@ -112,7 +112,7 @@ $(document).ready(function() {
   // });
 
 
-};
+});
     
 
   
