@@ -92,6 +92,7 @@ $(document).ready(function() {
 
   $("#Button-Start").click(function() {
       startGame();
+
   
   });
 
@@ -164,11 +165,18 @@ function startGame() {
 
 
     console.log("game is started!");
+    // findSelectedPlayer
+
+    
+      //data for selected players
+      //use js to change display to show selected player
+    // findOpponent
   
 }
 
+function findSelectedPlayer() {
 
-
+}
 
 
 
@@ -177,6 +185,16 @@ function startGameover() {
     alert("Reset Game");
   
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
